@@ -5,7 +5,7 @@ import { useState, useEffect } from "react"
 
 function App() {
   const [data, setData] = useState([])
-  const [kwh, setKwh] = useState(1,11)
+  const [kwh, setKwh] = useState(1.11)
   useEffect(() => {
     const dataFetch = async () => {
       const res = await (
@@ -39,7 +39,7 @@ function App() {
         return (
           <tr className="wrapper" key={dt.id}>
 
-          <td><img src="/icons/czajnik.png" alt="" /></td>         
+          <td><img src={dt.icon} alt="" /></td>         
           <td>{dt.name}</td>         
           <td>{dt.annualUsage}</td>
           <td>{(dt.annualUsage*kwh).toFixed(2)}</td>
@@ -53,7 +53,7 @@ function App() {
 
       <h1>Roczne zużycie: {(data.reduce((acc,item)=>acc+item.annualUsage,0)).toFixed(2)} kWh</h1>
       <h1>Dwumiesięczne zużycie: {(data.reduce((acc,item)=>acc+item.annualUsage/6,0)).toFixed(2)} kWh</h1>
-      <h1>Dwumiesięczna opłata: {(data.reduce((acc,item)=>acc+item.annualUsage*kwh/6,0)).toFixed(2)} PLN</h1>
+      <h1>Dwumiesięczna opłata: {(data.reduce((acc,item)=>acc+(item.annualUsage*kwh/6),0)).toFixed(2)} PLN</h1>
 
     </div>
   )

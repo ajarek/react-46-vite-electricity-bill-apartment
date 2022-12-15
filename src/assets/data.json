@@ -1,99 +1,99 @@
 [
   {
     "id": "1",
-    "icon":"CgSmartHomeRefrigerator",
+    "icon":"/icons/lodowka.png",
     "name": "Lodówka",
     "annualUsage": 178
   },
   {
     "id": "2",
-    "icon":"GiChickenOven",
+    "icon":"/icons/kuchenka.png",
     "name": "Kuchnia indukcyjna",
     "annualUsage": 255
   },
   {
     "id": "3",
-    "icon":"GiCoffeePot",
+    "icon":"/icons/czajnik.png",
     "name": "Czajnik",
     "annualUsage": 123
   },
   {
     "id": "4",
-    "icon":"MdMicrowave",
+    "icon":"/icons/microfala.png",
     "name": "Mikrofala",
     "annualUsage": 131
   },
   {
     "id": "5",
-    "icon":"FaArchive",
+    "icon":"/icons/zmywarka.png",
     "name": "Zmywarka",
     "annualUsage": 146
   },
   {
     "id": "6",
-    "icon":"GrMonitor",
+    "icon":"/icons/tv.png",
     "name": "Telewizor",
-    "annualUsage": 503
+    "annualUsage": 324
   },
 
   {
     "id": "7",
-    "icon":"GiLaptop",
+    "icon":"/icons/laptop.png",
     "name": "Laptop-1",
     "annualUsage": 290
   },
   {
     "id": "11",
-    "icon":"GiLaptop",
+    "icon":"/icons/laptop.png",
     "name": "Laptop-2",
     "annualUsage": 290
   },
   {
     "id": "8",
-    "icon":"GiWashingMachine",
+    "icon":"/icons/pralka.png",
     "name": "Pralko-suszarka",
     "annualUsage": 308
   },
   {
     "id": "9",
-    "icon":"FaRegLightbulb",
+    "icon":"/icons/hue.png",
     "name": "Oświetlenie hue",
     "annualUsage": 35
   },
   {
     "id": "10",
-    "icon":"GiCookingPot ",
+    "icon":"/icons/kombiwar.png ",
     "name": "Kombiwar",
     "annualUsage": 100
   },
   {
     "id": "12",
-    "icon":"GiCeilingLight",
+    "icon":"/icons/lampa.png",
     "name": "Oświetlenie łazienka",
     "annualUsage": 46
   },
   {
     "id": "13",
-    "icon":"GiCeilingLight",
+    "icon":"/icons/lampa.png",
     "name": "Oświetlenie kuchnia",
     "annualUsage": 8
   },
   {
     "id": "14",
-    "icon":"GiCeilingLight",
+    "icon":"/icons/lampa.png",
     "name": "Oświetlenie mały pokój",
     "annualUsage": 11
   },
   {
     "id": "15",
-    "icon":"ImPowerCord",
+    "icon":"/icons/zasilacz.png",
     "name": "Zasilacz router",
     "annualUsage": 44
   },
   {
     "id": "16",
-    "icon":"ImPowerCord",
-    "name": "Zasilacz UPC",
+    "icon":"/icons/konwerter.png",
+    "name": "Konwerter UPC",
     "annualUsage": 47
   }
 ]
