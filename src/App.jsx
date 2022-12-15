@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react"
-
-
-
+const urlData='src/assets/data.json'
+const urlFireBase= "https://energy-consumption-2224c-default-rtdb.europe-west1.firebasedatabase.app/.json"
 
 function App() {
   const [data, setData] = useState([])
@@ -9,9 +8,7 @@ function App() {
   useEffect(() => {
     const dataFetch = async () => {
       const res = await (
-        await fetch(
-          "src/assets/data.json"
-        )
+        await fetch(urlFireBase)
       ).json();
 
       // set state when the data received
@@ -20,7 +17,7 @@ function App() {
 
     dataFetch();
   },[])
-  
+  console.log(data);
   return (
     <div className="App">
       <table>
