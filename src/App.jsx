@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react"
 
 
+
+
 function App() {
   const [data, setData] = useState([])
-  const [kwh, setKwh] = useState(0.77)
+  const [kwh, setKwh] = useState(1,11)
   useEffect(() => {
     const dataFetch = async () => {
       const res = await (
@@ -23,28 +25,36 @@ function App() {
     <div className="App">
       <table>
     <thead>
-        <tr>
-            <th>Nazwa</th>
-            <th>Moc w kW</th>
-            <th>Czas w h</th>
-            <th>Opłata za 24h</th>
+        <tr> 
+            <th>Ikona</th>           
+            <th>Nazwa</th>           
+            <th>Zużycie kWh/rok</th>
+            <th>Opłata za rok w PLN</th>
+            <th>Opłata za 2 m-ce w PLN</th>
         </tr>
     </thead>
     <tbody>
       
-      {data?.map((dt)=>{
+      {data?.sort((a,b)=>b.annualUsage-a.annualUsage).map((dt)=>{
         return (
           <tr className="wrapper" key={dt.id}>
-          <td>{dt.name}</td>
-          <td>{dt.power}</td>
-          <td>{dt.workingTime}</td>
-          <td>{dt.power*dt.workingTime*kwh}</td>
+
+          <td><img src="/icons/czajnik.png" alt="" /></td>         
+          <td>{dt.name}</td>         
+          <td>{dt.annualUsage}</td>
+          <td>{(dt.annualUsage*kwh).toFixed(2)}</td>
+          <td>{(dt.annualUsage*kwh/6).toFixed(2)}</td>
           </tr>
         )
       })}
      
       </tbody>
       </table>
+
+      <h1>Roczne zużycie: {(data.reduce((acc,item)=>acc+item.annualUsage,0)).toFixed(2)} kWh</h1>
+      <h1>Dwumiesięczne zużycie: {(data.reduce((acc,item)=>acc+item.annualUsage/6,0)).toFixed(2)} kWh</h1>
+      <h1>Dwumiesięczna opłata: {(data.reduce((acc,item)=>acc+item.annualUsage*kwh/6,0)).toFixed(2)} PLN</h1>
+
     </div>
   )
 }

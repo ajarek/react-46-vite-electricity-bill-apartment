@@ -1,59 +1,99 @@
 [
   {
-    "id":"1",
-    "name":"lodówka",
-    "power": 0.5,
-    "workingTime":"24"
+    "id": "1",
+    "icon":"CgSmartHomeRefrigerator",
+    "name": "Lodówka",
+    "annualUsage": 178
   },
   {
-    "id":"2",
-    "name":"kuchnia indukcyjna",
-    "power": 2,
-    "workingTime":"0.5"
+    "id": "2",
+    "icon":"GiChickenOven",
+    "name": "Kuchnia indukcyjna",
+    "annualUsage": 255
   },
   {
-    "id":"3",
-    "name":"czajnik",
-    "power":2.4,
-    "workingTime":"0.5"
+    "id": "3",
+    "icon":"GiCoffeePot",
+    "name": "Czajnik",
+    "annualUsage": 123
   },
   {
-    "id":"4",
-    "name":"mikrofala",
-    "power": 1,
-    "workingTime":"0.2"
+    "id": "4",
+    "icon":"MdMicrowave",
+    "name": "Mikrofala",
+    "annualUsage": 131
   },
   {
-    "id":"5",
-    "name":"zmywarka",
-    "power": 1,
-    "workingTime":"0.2"
+    "id": "5",
+    "icon":"FaArchive",
+    "name": "Zmywarka",
+    "annualUsage": 146
   },
   {
-    "id":"6",
-    "name":"telewizor",
-    "power":0.2,
-    "workingTime":"10"
+    "id": "6",
+    "icon":"GrMonitor",
+    "name": "Telewizor",
+    "annualUsage": 503
   },
-  
+
   {
-    "id":"7",
-    "name":"laptop",
-    "power":0.035,
-    "workingTime":"6"
-  },
-  {
-    "id":"8",
-    "name":"pralka",
-    "power":1,
-    "workingTime":"4"
+    "id": "7",
+    "icon":"GiLaptop",
+    "name": "Laptop-1",
+    "annualUsage": 290
   },
   {
-    "id":"9",
-    "name":"oświetlenie",
-    "power":0.3,
-    "workingTime":"5"
+    "id": "11",
+    "icon":"GiLaptop",
+    "name": "Laptop-2",
+    "annualUsage": 290
+  },
+  {
+    "id": "8",
+    "icon":"GiWashingMachine",
+    "name": "Pralko-suszarka",
+    "annualUsage": 308
+  },
+  {
+    "id": "9",
+    "icon":"FaRegLightbulb",
+    "name": "Oświetlenie hue",
+    "annualUsage": 35
+  },
+  {
+    "id": "10",
+    "icon":"GiCookingPot ",
+    "name": "Kombiwar",
+    "annualUsage": 100
+  },
+  {
+    "id": "12",
+    "icon":"GiCeilingLight",
+    "name": "Oświetlenie łazienka",
+    "annualUsage": 46
+  },
+  {
+    "id": "13",
+    "icon":"GiCeilingLight",
+    "name": "Oświetlenie kuchnia",
+    "annualUsage": 8
+  },
+  {
+    "id": "14",
+    "icon":"GiCeilingLight",
+    "name": "Oświetlenie mały pokój",
+    "annualUsage": 11
+  },
+  {
+    "id": "15",
+    "icon":"ImPowerCord",
+    "name": "Zasilacz router",
+    "annualUsage": 44
+  },
+  {
+    "id": "16",
+    "icon":"ImPowerCord",
+    "name": "Zasilacz UPC",
+    "annualUsage": 47
   }
-
-
 ]
