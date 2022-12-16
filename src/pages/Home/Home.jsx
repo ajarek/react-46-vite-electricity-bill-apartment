@@ -1,87 +1,22 @@
-import { useState, useEffect } from 'react'
-import { useFetch } from '../../api/useFetch'
-import Loading from '../../components/Loading/Loading'
-import FullPageLayout from '../../components/FullPageLayout/FullPageLayout'
-import ErrorMessage from '../../components/ErrorMessage/ErrorMessage'
+import React from 'react'
 import './Home.css'
-const urlData = 'src/assets/data.json'
-const urlFireBase =
-  'https://energy-consumption-2224c-default-rtdb.europe-west1.firebasedatabase.app/.json'
-
-function Home() {
-  const [kwh, setKwh] = useState(1.11)
-  const { data, pending, error } = useFetch(urlFireBase)
-
+const Home = () => {
   return (
-    <div className='App'>
-      {error ? (
-        <FullPageLayout>
-          <ErrorMessage>{error}</ErrorMessage>
-        </FullPageLayout>
-      ) : null}
-      {pending ? (
-        <FullPageLayout>
-          <Loading />
-        </FullPageLayout>
-      ) : null}
-      <table>
-        <thead>
-          <tr>
-            <th>Ikona</th>
-            <th>Nazwa</th>
-            <th>Zużycie kWh/rok</th>
-            <th>Opłata za rok w PLN</th>
-            <th>Opłata za 2 m-ce w PLN</th>
-          </tr>
-        </thead>
-        <tbody>
-          {data
-            ?.sort((a, b) => b.annualUsage - a.annualUsage)
-            .map((dt) => {
-              return (
-                <tr
-                  className='wrapper'
-                  key={dt.id}
-                >
-                  <td>
-                    <img
-                      src={dt.icon}
-                      alt=''
-                    />
-                  </td>
-                  <td>{dt.name}</td>
-                  <td>{dt.annualUsage}</td>
-                  <td>{(dt.annualUsage * kwh).toFixed(2)}</td>
-                  <td>{((dt.annualUsage * kwh) / 6).toFixed(2)}</td>
-                </tr>
-              )
-            })}
-        </tbody>
-      </table>
-
-      <h1>
-        Roczne zużycie:{' '}
-        {data &&
-          data.reduce((acc, item) => acc + item.annualUsage, 0).toFixed(2)}{' '}
-        kWh
-      </h1>
-      <h1>
-        Dwumiesięczne zużycie:{' '}
-        {data &&
-          data
-            ?.reduce((acc, item) => acc + item.annualUsage / 6, 0)
-            .toFixed(2)}{' '}
-        kWh
-      </h1>
-      <h1>
-        Dwumiesięczna opłata:{' '}
-        {data &&
-          data
-            ?.reduce((acc, item) => acc + (item.annualUsage * kwh) / 6, 0)
-            .toFixed(2)}{' '}
-        PLN
-      </h1>
+    <div className='home-root'>
+      <h1>Synteza Rachunku za energię w domu</h1>
+      <div className="home-wrapper">
+      <div className="home-info">
+        <h3>Podaj stawkę brutto za  1kwh</h3>
+        <p>Uwzględnij wszystkie opłaty w tym przesyłową, abonamentową ...itp </p>
+        <input type="number" placeholder='domyślnie: 1.11'/>
+      </div>
+      <div className="img">
+        <img src="/public/electricity-bill.png" alt="" />
+      </div>
+      
+      </div>
     </div>
   )
 }
+
 export default Home

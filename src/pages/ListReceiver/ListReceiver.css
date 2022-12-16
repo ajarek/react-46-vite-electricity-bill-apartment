@@ -1,0 +1,37 @@
+.list-receiver{
+margin-top: 10vh;
+margin-bottom: 1rem;
+}
+table,
+th,
+td {
+  border: 1px solid;
+}
+
+table {
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+th,
+td {
+  padding: 5px 10px;
+  border-top-width: 0;
+  border-left-width: 0;
+}
+
+th {
+  position: sticky;
+  top: 10vh;
+  background: #fff;
+  vertical-align: bottom;
+}
+
+th:last-child,
+td:last-child {
+  border-right-width: 0;
+}
+
+tr:last-child td {
+  border-bottom-width: 0;
+}

@@ -1,0 +1,30 @@
+.navigation-root{
+  width: 100%;
+  height: 10vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color:#65a7dd ;
+  z-index: 10;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #f0f8ff;
+
+}
+.link{
+ text-decoration:none;
+ color: #f0f8ff;
+ transition: 0.3s ease-in-out;
+}
+.link:hover{
+  transform: scale(1.05);
+  color: #225577;
+}
+.link:focus{
+  color:#225577;
+}
+
