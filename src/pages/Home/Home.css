@@ -28,5 +28,21 @@
   width: 300px;
   padding: 0 2rem;
   font-size: 1.2rem;
-  
+  border-radius: 5px;
+}
+.home-info button{
+  height: 40px;
+  width: 300px;
+  padding: 0 2rem;
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  background-color: #65a7dd;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color:#f0f8ff ;
+  transition: background 0.2s ease;
+}
+.home-info button:hover{
+  background:#379cef ;
 }
