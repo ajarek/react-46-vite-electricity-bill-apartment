@@ -1,5 +1,6 @@
-import { useState, useEffect,useContext } from 'react'
+import { useState, useEffect, useContext } from 'react'
 import { AppContext } from '../../App'
+import { NavLink } from 'react-router-dom'
 import { useFetch } from '../../api/useFetch'
 import { remove } from '../../api/remove'
 import Loading from '../../components/Loading/Loading'
@@ -11,9 +12,9 @@ const urlFireBase =
   'https://energy-consumption-2224c-default-rtdb.europe-west1.firebasedatabase.app/'
 
 function ListReceiver() {
-  const {kwh, setKwh} =  useContext(AppContext)
+  const { kwh, setKwh } = useContext(AppContext)
   const { data, pending, error } = useFetch(`${urlFireBase}.json`)
-//https://energy-consumption-2224c-default-rtdb.europe-west1.firebasedatabase.app/0
+
   return (
     <div className='list-receiver'>
       {error ? (
@@ -38,48 +39,54 @@ function ListReceiver() {
           </tr>
         </thead>
         <tbody>
-          {data
-            ?.sort((a, b) => b.annualUsage - a.annualUsage)
-            .map((dt) => {
-              return (
-                <tr
-                  className='wrapper'
-                  key={dt.id}
-                >
-                  <td>
-                    <img
-                      src={dt.icon}
-                      alt=''
-                    />
-                  </td>
-                  <td>{dt.name}</td>
-                  <td>{dt.annualUsage}</td>
-                  <td>{(dt.annualUsage * kwh).toFixed(2)}</td>
-                  <td>{((dt.annualUsage * kwh) / 6).toFixed(2)}</td>
-                  <td>
-                    <button
-                     className='dumpster'
-                     onClick={()=>remove(`${urlFireBase}${dt.id}/.json`)}
-                     >
-                      🗑️
+          {data &&
+            Object.entries(data)
+              .sort(([, a], [, b]) => b.annualUsage - a.annualUsage)
+              .map(([key, value]) => {
+                return (
+                  <tr
+                    className='wrapper'
+                    key={value.id}
+                  >
+                    <td>
+                      <img
+                        src={value.icon}
+                        alt=''
+                      />
+                    </td>
+                    <td>{value.name}</td>
+                    <td>{value.annualUsage}</td>
+                    <td>{(value.annualUsage * kwh).toFixed(2)}</td>
+                    <td>{((value.annualUsage * kwh) / 6).toFixed(2)}</td>
+                    <td>
+                      <button
+                        className='dumpster'
+                        onClick={() => {
+                          remove(`${urlFireBase}${key}/.json`)
+                         setTimeout(()=>{location.reload()},300) 
+                        }}
+                      >
+                        🗑️
                       </button>
-                  </td>
-                </tr>
-              )
-            })}
+                    </td>
+                  </tr>
+                )
+              })}
         </tbody>
       </table>
 
       <h1>
         Roczne zużycie:{' '}
         {data &&
-          data.reduce((acc, item) => acc + item.annualUsage, 0).toFixed(2)}{' '}
+          Object.values(data)
+            .reduce((acc, item) => acc + item.annualUsage, 0)
+            .toFixed(2)}{' '}
         kWh
       </h1>
       <h1>
         Dwumiesięczne zużycie:{' '}
         {data &&
-          data
+          Object.values(data)
             ?.reduce((acc, item) => acc + item.annualUsage / 6, 0)
             .toFixed(2)}{' '}
         kWh
@@ -87,7 +94,7 @@ function ListReceiver() {
       <h1>
         Dwumiesięczna opłata:{' '}
         {data &&
-          data
+          Object.values(data)
             ?.reduce((acc, item) => acc + (item.annualUsage * kwh) / 6, 0)
             .toFixed(2)}{' '}
         PLN

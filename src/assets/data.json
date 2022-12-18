@@ -1,99 +1,98 @@
-[
-  {
+{
+  "-NJaghfAvuvhOOekTNOC": {
+    "annualUsage": 178,
+    "icon": "/icons/lodowka.png",
     "id": "1",
-    "icon":"/icons/lodowka.png",
-    "name": "Lodówka",
-    "annualUsage": 178
+    "name": "Lodówka"
   },
-  {
+  "-NJahOgBTVeaxukeEPUw": {
+    "annualUsage": 255,
+    "icon": "/icons/kuchenka.png",
     "id": "2",
-    "icon":"/icons/kuchenka.png",
-    "name": "Kuchnia indukcyjna",
-    "annualUsage": 255
+    "name": "Kuchnia indukcyjna"
   },
-  {
+  "-NJahWDZXMqq2znElToH": {
+    "annualUsage": 123,
+    "icon": "/icons/czajnik.png",
     "id": "3",
-    "icon":"/icons/czajnik.png",
-    "name": "Czajnik",
-    "annualUsage": 123
+    "name": "Czajnik"
   },
-  {
+  "-NJahZutGstJT-5sSycp": {
+    "annualUsage": 131,
+    "icon": "/icons/microfala.png",
     "id": "4",
-    "icon":"/icons/microfala.png",
-    "name": "Mikrofala",
-    "annualUsage": 131
+    "name": "Mikrofala"
   },
-  {
+  "-NJahk-2kSWbaewonrki": {
+    "annualUsage": 146,
+    "icon": "/icons/zmywarka.png",
     "id": "5",
-    "icon":"/icons/zmywarka.png",
-    "name": "Zmywarka",
-    "annualUsage": 146
+    "name": "Zmywarka"
   },
-  {
+  "-NJahorsvRs_McxUOIiw": {
+    "annualUsage": 324,
+    "icon": "/icons/tv.png",
     "id": "6",
-    "icon":"/icons/tv.png",
-    "name": "Telewizor",
-    "annualUsage": 324
+    "name": "Telewizor"
   },
-
-  {
+  "-NJaht-3Qcs0_Iw3czN_": {
+    "annualUsage": 290,
+    "icon": "/icons/laptop.png",
     "id": "7",
-    "icon":"/icons/laptop.png",
-    "name": "Laptop-1",
-    "annualUsage": 290
+    "name": "Laptop-1"
   },
-  {
-    "id": "11",
-    "icon":"/icons/laptop.png",
-    "name": "Laptop-2",
-    "annualUsage": 290
-  },
-  {
+  "-NJaiANBRBZYQY_E4mGr": {
+    "annualUsage": 308,
+    "icon": "/icons/pralka.png",
     "id": "8",
-    "icon":"/icons/pralka.png",
-    "name": "Pralko-suszarka",
-    "annualUsage": 308
+    "name": "Pralko-suszarka"
   },
-  {
+  "-NJaiU3ZBRvr3MY0uDEv": {
+    "annualUsage": 35,
+    "icon": "/icons/hue.png",
     "id": "9",
-    "icon":"/icons/hue.png",
-    "name": "Oświetlenie hue",
-    "annualUsage": 35
+    "name": "Oświetlenie hue"
   },
-  {
+  "-NJaiXeEt1ugGYD2o4Jy": {
+    "annualUsage": 100,
+    "icon": "/icons/kombiwar.png ",
     "id": "10",
-    "icon":"/icons/kombiwar.png ",
-    "name": "Kombiwar",
-    "annualUsage": 100
+    "name": "Kombiwar"
   },
-  {
+  "-NJaiakWOk48eu-NUTS-": {
+    "annualUsage": 290,
+    "icon": "/icons/laptop.png",
+    "id": "11",
+    "name": "Laptop-2"
+  },
+  "-NJaidxHJ0knZ4aKf6Of": {
+    "annualUsage": 46,
+    "icon": "/icons/lampa.png",
     "id": "12",
-    "icon":"/icons/lampa.png",
-    "name": "Oświetlenie łazienka",
-    "annualUsage": 46
+    "name": "Oświetlenie łazienka"
   },
-  {
+  "-NJaihK8yNfZZPbv6dHe": {
+    "annualUsage": 8,
+    "icon": "/icons/lampa.png",
     "id": "13",
-    "icon":"/icons/lampa.png",
-    "name": "Oświetlenie kuchnia",
-    "annualUsage": 8
+    "name": "Oświetlenie kuchnia"
   },
-  {
+  "-NJaikVzpyJwA6cdiQEz": {
+    "annualUsage": 11,
+    "icon": "/icons/lampa.png",
     "id": "14",
-    "icon":"/icons/lampa.png",
-    "name": "Oświetlenie mały pokój",
-    "annualUsage": 11
+    "name": "Oświetlenie mały pokój"
   },
-  {
+  "-NJaishMYCGAw_j_DGUp": {
+    "annualUsage": 44,
+    "icon": "/icons/zasilacz.png",
     "id": "15",
-    "icon":"/icons/zasilacz.png",
-    "name": "Zasilacz router",
-    "annualUsage": 44
+    "name": "Zasilacz router"
   },
-  {
+  "-NJaiwJMGtWzqtetNuoz": {
+    "annualUsage": 47,
+    "icon": "/icons/konwerter.png",
     "id": "16",
-    "icon":"/icons/konwerter.png",
-    "name": "Konwerter UPC",
-    "annualUsage": 47
+    "name": "Konwerter UPC"
   }
-]
+}
