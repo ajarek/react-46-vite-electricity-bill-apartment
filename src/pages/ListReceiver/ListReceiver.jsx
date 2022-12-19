@@ -46,12 +46,12 @@ function ListReceiver() {
                 return (
                   <tr
                     className='wrapper'
-                    key={value.id}
+                    key={key}
                   >
                     <td>
                       <img
                         src={value.icon}
-                        alt=''
+                        alt={value.name}
                       />
                     </td>
                     <td>{value.name}</td>
@@ -79,7 +79,7 @@ function ListReceiver() {
         Roczne zużycie:{' '}
         {data &&
           Object.values(data)
-            .reduce((acc, item) => acc + item.annualUsage, 0)
+            .reduce((acc, item) => Number(acc) + Number(item.annualUsage), 0)
             .toFixed(2)}{' '}
         kWh
       </h1>

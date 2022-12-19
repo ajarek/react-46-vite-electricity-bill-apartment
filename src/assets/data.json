@@ -1,98 +1,73 @@
 {
   "-NJaghfAvuvhOOekTNOC": {
     "annualUsage": 178,
-    "icon": "/icons/lodowka.png",
-    "id": "1",
-    "name": "Lodówka"
+    "icon": "/icons/lodowka.png",    "name": "Lodówka"
   },
   "-NJahOgBTVeaxukeEPUw": {
     "annualUsage": 255,
-    "icon": "/icons/kuchenka.png",
-    "id": "2",
-    "name": "Kuchnia indukcyjna"
+    "icon": "/icons/kuchenka.png",    "name": "Kuchnia indukcyjna"
   },
   "-NJahWDZXMqq2znElToH": {
     "annualUsage": 123,
-    "icon": "/icons/czajnik.png",
-    "id": "3",
-    "name": "Czajnik"
+    "icon": "/icons/czajnik.png",    "name": "Czajnik"
   },
   "-NJahZutGstJT-5sSycp": {
     "annualUsage": 131,
-    "icon": "/icons/microfala.png",
-    "id": "4",
-    "name": "Mikrofala"
+    "icon": "/icons/microfala.png",    "name": "Mikrofala"
   },
   "-NJahk-2kSWbaewonrki": {
     "annualUsage": 146,
-    "icon": "/icons/zmywarka.png",
-    "id": "5",
-    "name": "Zmywarka"
+    "icon": "/icons/zmywarka.png",    "name": "Zmywarka"
   },
   "-NJahorsvRs_McxUOIiw": {
     "annualUsage": 324,
-    "icon": "/icons/tv.png",
-    "id": "6",
-    "name": "Telewizor"
+    "icon": "/icons/tv.png",    "name": "Telewizor"
   },
   "-NJaht-3Qcs0_Iw3czN_": {
     "annualUsage": 290,
-    "icon": "/icons/laptop.png",
-    "id": "7",
-    "name": "Laptop-1"
+    "icon": "/icons/laptop.png",    "name": "Laptop-1"
   },
   "-NJaiANBRBZYQY_E4mGr": {
     "annualUsage": 308,
-    "icon": "/icons/pralka.png",
-    "id": "8",
-    "name": "Pralko-suszarka"
+    "icon": "/icons/pralka.png",    "name": "Pralko-suszarka"
   },
   "-NJaiU3ZBRvr3MY0uDEv": {
     "annualUsage": 35,
-    "icon": "/icons/hue.png",
-    "id": "9",
-    "name": "Oświetlenie hue"
+    "icon": "/icons/hue.png",    "name": "Oświetlenie hue"
   },
   "-NJaiXeEt1ugGYD2o4Jy": {
     "annualUsage": 100,
     "icon": "/icons/kombiwar.png ",
-    "id": "10",
     "name": "Kombiwar"
   },
   "-NJaiakWOk48eu-NUTS-": {
     "annualUsage": 290,
     "icon": "/icons/laptop.png",
-    "id": "11",
     "name": "Laptop-2"
   },
   "-NJaidxHJ0knZ4aKf6Of": {
     "annualUsage": 46,
     "icon": "/icons/lampa.png",
-    "id": "12",
     "name": "Oświetlenie łazienka"
   },
   "-NJaihK8yNfZZPbv6dHe": {
     "annualUsage": 8,
     "icon": "/icons/lampa.png",
-    "id": "13",
     "name": "Oświetlenie kuchnia"
   },
   "-NJaikVzpyJwA6cdiQEz": {
     "annualUsage": 11,
     "icon": "/icons/lampa.png",
-    "id": "14",
     "name": "Oświetlenie mały pokój"
   },
   "-NJaishMYCGAw_j_DGUp": {
     "annualUsage": 44,
     "icon": "/icons/zasilacz.png",
-    "id": "15",
     "name": "Zasilacz router"
   },
   "-NJaiwJMGtWzqtetNuoz": {
     "annualUsage": 47,
     "icon": "/icons/konwerter.png",
-    "id": "16",
     "name": "Konwerter UPC"
   }
 }

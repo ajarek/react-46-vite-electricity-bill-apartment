@@ -1,17 +1,22 @@
 import { useForm } from 'react-hook-form'
 import { React, useContext, useEffect } from 'react'
-import { Navigate } from 'react-router-dom'
+import {useNavigate, Navigate } from 'react-router-dom'
 import { AppContext } from '../../App'
 import { yupResolver } from '@hookform/resolvers/yup'
 import * as yup from 'yup'
 import { Label } from '../../components/Label/Label'
+import './Form.css'
+import post from '../../api/post'
 
 export const Form = () => {
-  
+  const navigate = useNavigate();
+
+  const urlPost =
+    'https://energy-consumption-2224c-default-rtdb.europe-west1.firebasedatabase.app/.json'
   const schema = yup.object().shape({
     name: yup.string().required('Nazwa jest wymagana!'),
-    select: yup.string().required('Wybór jest wymagany'),
-    annualUsage: yup.number().required('Zużycie jest wymagane!'),
+    icon: yup.string().required('Wybór jest wymagany'),
+    annualUsage: yup.string().required('Zużycie jest wymagane!'),
   })
 
   const {
@@ -22,13 +27,15 @@ export const Form = () => {
     resolver: yupResolver(schema),
   })
 
-  const onSubmit = (data) => {
-    console.log(data);
+  const onSubmit = (data) => {  
+    post(urlPost, data)
+    navigate("/listreceiver");
+    setTimeout(()=>{location.reload()},300) 
   }
-
+ 
   return (
-    <>
-    
+    <div className='form-wrapper'>
+      <h2>Dodaj odbiornik</h2>
       <form onSubmit={handleSubmit(onSubmit)}>
         <Label label={'Name'} />
         <input
@@ -39,23 +46,22 @@ export const Form = () => {
         <p>{errors?.name?.message}</p>
         <Label label={'Wybierz ikonę'} />
         <select
-          {...register("select")}
-          onChange={(e) => doSomething(e.target.value)}
+          {...register('icon')}
+          className='select'
         >
-          <option value="czajnik.png">Czajnik</option>
-          <option value="hue.png">Hue</option>
-          <option value="kombiwar.png">Kombiwar</option>
-          <option value="konwerter.png">Konwerter</option>
-          <option value="kuchenka.png">Kuchenka</option>
-          <option value="lampa.png">Lampa</option>
-          <option value="laptop.png">Laptop</option>
-          <option value="lodówka.png">lodówka</option>
-          <option value="microfala.png">Mikrofala</option>
-          <option value="pralka.png">Pralka</option>
-          <option value="tv.png">TV</option>
-          <option value="zasilacz.png">Zasilacz</option>
-          <option value="zmywarka.png">Zmywarka</option>
-
+          <option value='/icons/czajnik.png'>Czajnik</option>
+          <option value='/icons/hue.png'>Hue</option>
+          <option value='/icons/kombiwar.png'>Kombiwar</option>
+          <option value='/icons/konwerter.png'>Konwerter</option>
+          <option value='/icons/kuchenka.png'>Kuchenka</option>
+          <option value='/icons/lampa.png'>Lampa</option>
+          <option value='/icons/laptop.png'>Laptop</option>
+          <option value='/icons/lodówka.png'>Lodówka</option>
+          <option value='/icons/microfala.png'>Mikrofala</option>
+          <option value='/icons/pralka.png'>Pralka</option>
+          <option value='/icons/tv.png'>TV</option>
+          <option value='/icons/zasilacz.png'>Zasilacz</option>
+          <option value='/icons/zmywarka.png'>Zmywarka</option>
         </select>
         <p>{errors.select?.message}</p>
         <Label label={'Zużycie kWh/rok'} />
@@ -64,13 +70,13 @@ export const Form = () => {
           placeholder='np. 255'
           {...register('annualUsage')}
         />
-        <p>{errors.annualUsage?.message}</p>
+        <p>{errors?.annualUsage?.message}</p>
 
         <input
           type='submit'
           value='Submit'
         />
       </form>
-    </>
+    </div>
   )
 }
