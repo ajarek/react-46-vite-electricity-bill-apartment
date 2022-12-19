@@ -40,7 +40,7 @@ export const Form = () => {
         <Label label={'Name'} />
         <input
           type='text'
-          placeholder='np. Pralka'
+          placeholder='np. Czajnik'
           {...register('name')}
         />
         <p>{errors?.name?.message}</p>
@@ -67,7 +67,7 @@ export const Form = () => {
         <Label label={'Zużycie kWh/rok'} />
         <input
           type='number'
-          placeholder='np. 255'
+          placeholder='np. 123'
           {...register('annualUsage')}
         />
         <p>{errors?.annualUsage?.message}</p>
