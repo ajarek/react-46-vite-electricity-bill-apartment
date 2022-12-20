@@ -1,10 +1,7 @@
 export const remove = (url) => {
-  
-
   return fetch(url, {
-      method: 'DELETE',
-  })
-      .then((response) => response.json())
+    method: 'DELETE',
+  }).then((response) => response.json())
 }
 
 export default remove

@@ -1,6 +1,6 @@
-.list-receiver{
-margin-top: 10vh;
-margin-bottom: 1rem;
+.list-receiver {
+  margin-top: 10vh;
+  margin-bottom: 1rem;
 }
 table,
 th,
@@ -25,7 +25,6 @@ th {
   top: 10vh;
   background: #fff;
   vertical-align: bottom;
-  
 }
 
 th:last-child,
@@ -36,31 +35,33 @@ td:last-child {
 tr:last-child td {
   border-bottom-width: 0;
 }
-.dumpster{
+.dumpster {
   border: none;
   background-color: transparent;
   font-size: 1.5rem;
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
 }
-.dumpster:hover{
+.dumpster:hover {
   transform: scale(1.2);
 }
-@media (max-width:670px) {
-  .list-receiver{
+@media (max-width: 670px) {
+  .list-receiver {
     width: 100%;
   }
-  .list-receiver h1{
-font-size: 1rem;
-  }
-  table,.dumpster{
+  .list-receiver h1 {
     font-size: 1rem;
   }
-  td,th {
+  table,
+  .dumpster {
+    font-size: 1rem;
+  }
+  td,
+  th {
     padding: 5px 1px;
     text-align: center;
   }
-  .ikona{
+  .ikona {
     display: none;
   }
 }

@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom"
+import { Routes, Route } from 'react-router-dom'
 import { useState, createContext } from 'react'
 import Navigation from './components/Navigation/Navigation'
 import ListReceiver from './pages/ListReceiver/ListReceiver'
@@ -9,23 +9,22 @@ function App() {
   const [kwh, setKwh] = useState(1.11)
   return (
     <div className='App'>
-        <AppContext.Provider
-        value={{kwh, setKwh}}>
-      <Navigation/>
-      <Routes>
-        <Route
-          path='/'
-          element={<Home />}
-        />
-        <Route
-          path='/listreceiver'
-          element={<ListReceiver />}
-        />
-        <Route
-          path='/receiver'
-          element={<Receiver />}
-        />
-      </Routes>
+      <AppContext.Provider value={{ kwh, setKwh }}>
+        <Navigation />
+        <Routes>
+          <Route
+            path='/'
+            element={<Home />}
+          />
+          <Route
+            path='/listreceiver'
+            element={<ListReceiver />}
+          />
+          <Route
+            path='/receiver'
+            element={<Receiver />}
+          />
+        </Routes>
       </AppContext.Provider>
     </div>
   )

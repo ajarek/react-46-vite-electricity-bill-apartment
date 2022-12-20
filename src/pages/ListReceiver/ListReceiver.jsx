@@ -63,7 +63,9 @@ function ListReceiver() {
                         className='dumpster'
                         onClick={() => {
                           remove(`${urlFireBase}${key}/.json`)
-                         setTimeout(()=>{location.reload()},300) 
+                          setTimeout(() => {
+                            location.reload()
+                          }, 300)
                         }}
                       >
                         🗑️

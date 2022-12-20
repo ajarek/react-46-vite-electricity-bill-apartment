@@ -1,39 +1,48 @@
 {
   "-NJaghfAvuvhOOekTNOC": {
     "annualUsage": 178,
-    "icon": "/icons/lodowka.png",    "name": "Lodówka"
+    "icon": "/icons/lodowka.png",
+    "name": "Lodówka"
   },
   "-NJahOgBTVeaxukeEPUw": {
     "annualUsage": 255,
-    "icon": "/icons/kuchenka.png",    "name": "Kuchnia indukcyjna"
+    "icon": "/icons/kuchenka.png",
+    "name": "Kuchnia indukcyjna"
   },
   "-NJahWDZXMqq2znElToH": {
     "annualUsage": 123,
-    "icon": "/icons/czajnik.png",    "name": "Czajnik"
+    "icon": "/icons/czajnik.png",
+    "name": "Czajnik"
   },
   "-NJahZutGstJT-5sSycp": {
     "annualUsage": 131,
-    "icon": "/icons/microfala.png",    "name": "Mikrofala"
+    "icon": "/icons/microfala.png",
+    "name": "Mikrofala"
   },
   "-NJahk-2kSWbaewonrki": {
     "annualUsage": 146,
-    "icon": "/icons/zmywarka.png",    "name": "Zmywarka"
+    "icon": "/icons/zmywarka.png",
+    "name": "Zmywarka"
   },
   "-NJahorsvRs_McxUOIiw": {
     "annualUsage": 324,
-    "icon": "/icons/tv.png",    "name": "Telewizor"
+    "icon": "/icons/tv.png",
+    "name": "Telewizor"
   },
   "-NJaht-3Qcs0_Iw3czN_": {
     "annualUsage": 290,
-    "icon": "/icons/laptop.png",    "name": "Laptop-1"
+    "icon": "/icons/laptop.png",
+    "name": "Laptop-1"
   },
   "-NJaiANBRBZYQY_E4mGr": {
     "annualUsage": 308,
-    "icon": "/icons/pralka.png",    "name": "Pralko-suszarka"
+    "icon": "/icons/pralka.png",
+    "name": "Pralko-suszarka"
   },
   "-NJaiU3ZBRvr3MY0uDEv": {
     "annualUsage": 35,
-    "icon": "/icons/hue.png",    "name": "Oświetlenie hue"
+    "icon": "/icons/hue.png",
+    "name": "Oświetlenie hue"
   },
   "-NJaiXeEt1ugGYD2o4Jy": {
     "annualUsage": 100,

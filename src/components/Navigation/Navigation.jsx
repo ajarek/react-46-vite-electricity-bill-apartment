@@ -1,37 +1,33 @@
-import React,{useState} from "react"
+import React, { useState } from 'react'
 import Hamburger from 'hamburger-react'
-import { NavLink } from "react-router-dom"
+import { NavLink } from 'react-router-dom'
 import './Navigation.css'
 
 export const Navigation = () => {
   const [isOpen, setOpen] = useState(false)
 
   return (
-   
-    <nav
-      className='navigation-root'
-    
-    >
-       <ul className={!isOpen ? 'wrapper' : 'wrapper navbar-none'}>
-      <NavLink
-        className='link'
-        to='/'
-      >
-       Głowna
-      </NavLink>
-      <NavLink
-        className='link'
-        to='/listreceiver'
-      >
-       Wykaz Odbiorników
-      </NavLink>
-      <NavLink
-        className='link'
-        to='/receiver'
-      >
-        Dodaj Odbiornik
-      </NavLink>
-      </ul>  
+    <nav className='navigation-root'>
+      <ul className={!isOpen ? 'wrapper' : 'wrapper navbar-none'}>
+        <NavLink
+          className='link'
+          to='/'
+        >
+          Głowna
+        </NavLink>
+        <NavLink
+          className='link'
+          to='/listreceiver'
+        >
+          Wykaz Odbiorników
+        </NavLink>
+        <NavLink
+          className='link'
+          to='/receiver'
+        >
+          Dodaj Odbiornik
+        </NavLink>
+      </ul>
       <div className='hamburger'>
         <Hamburger
           size={30}
