@@ -6,7 +6,7 @@
   margin-top: 10vh;
 }
 .home-root h1{
-  margin: 1rem;
+  margin: 1rem 0;
 }
 .home-wrapper{
   width: 100%;
@@ -45,4 +45,29 @@
 }
 .home-info button:hover{
   background:#379cef ;
+}
+@media (max-width:950px) {
+  .home-wrapper{
+    grid-template-columns: repeat(1,1fr);
+    place-items: center;
+  }
+  .home-info{
+    align-items: center;
+    padding: 0;
+
+  }
+  .home-root h1,.home-info h3,.home-info p{
+    text-align: center;
+  }
+  .home-info input,.home-info button{
+    width: 250px;
+  }
+  .img{
+    width: 250px;
+    height: 250px;
+  }
+  .img img{
+    width: 100%;
+    object-fit: cover;
+  }
 }

@@ -30,9 +30,9 @@ function ListReceiver() {
       <table>
         <thead>
           <tr>
-            <th>Ikona</th>
+            <th className='ikona'>Ikona</th>
             <th>Nazwa</th>
-            <th>Zużycie kWh/rok</th>
+            <th>Zużycie kWh / rok</th>
             <th>Opłata za rok w PLN</th>
             <th>Opłata za 2 m-ce w PLN</th>
             <th>Akcja</th>
@@ -45,10 +45,10 @@ function ListReceiver() {
               .map(([key, value]) => {
                 return (
                   <tr
-                    className='wrapper'
+                    className='wrapper-list'
                     key={key}
                   >
-                    <td>
+                    <td className='ikona'>
                       <img
                         src={value.icon}
                         alt={value.name}

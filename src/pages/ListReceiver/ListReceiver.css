@@ -25,6 +25,7 @@ th {
   top: 10vh;
   background: #fff;
   vertical-align: bottom;
+  
 }
 
 th:last-child,
@@ -44,4 +45,22 @@ tr:last-child td {
 }
 .dumpster:hover{
   transform: scale(1.2);
+}
+@media (max-width:670px) {
+  .list-receiver{
+    width: 100%;
+  }
+  .list-receiver h1{
+font-size: 1rem;
+  }
+  table,.dumpster{
+    font-size: 1rem;
+  }
+  td,th {
+    padding: 5px 1px;
+    text-align: center;
+  }
+  .ikona{
+    display: none;
+  }
 }
